@@ -1,7 +1,14 @@
 html,body{
     font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
     margin: 0;
     padding: 0;
+    --blue: #065fd4;
+    --white : #f2f2f2;
+}
+button{
+    cursor: pointer;
 }
 .rightmargin{
     margin-right: 1rem;
@@ -10,8 +17,30 @@ html,body{
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 3rem;
-    margin: 10rem 5rem;
+    min-height: 3rem;
+    margin: 5rem 5rem;
+}
+.msg-posting-textarea{
+    min-height: 1rem;
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 1rem;
+}
+.msg-posting button{
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.msg-posting button:hover{
+    opacity: 0.8;
+}
+.msg-posting button:active{
+    opacity: 0.6;
 }
 .msg-comment{
     display: flex;
