@@ -1,0 +1,46 @@
+html,body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.rightmargin{
+    margin-right: 1rem;
+}
+.msg-posting{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 3rem;
+    margin: 10rem 5rem;
+}
+.msg-comment{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 3rem;
+    margin: 0.7rem 5rem;
+}
+.msg div img{
+    border-radius: 50%;
+    width: 3rem;
+    height: 100%;
+    object-fit: cover;
+}
+.msg div div{
+    display: grid;
+    grid-template-rows: 1.5rem 1.5rem;
+    align-items: center;
+}
+.msg div div div{
+    display: flex;
+    height: 100%;
+}
+.msg div div div h2{
+    font-size: 0.8rem;
+}
+.msg div div div h3{
+    font-size: 0.6rem;
+}
+.msg div div div p{
+    font-size: 1rem;
+}
