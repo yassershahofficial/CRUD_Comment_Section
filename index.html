@@ -6,37 +6,66 @@
     <title>Comments</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31c9cf090b.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
     <div class="msg">
         <div class="msg-posting">
-            <img class="rightmargin" src="img/profile.png">
+            <form id="form">
+                <img class="rightmargin" src="img/profile.png">
             <textarea id="msgPosting" class="msg-posting-textarea rightmargin"></textarea>
             <button>
                 <p>
                     Comment
                 </p>
             </button>
+            </form>
         </div>
-        <div class="msg-comment">
-            <img class="rightmargin" src="img/profile.png">
-            <div>
-                <div>
-                    <h2 class="rightmargin">Yasser Shah</h2>
-                    <h3>3 days ago</h3>
+        <div id="blankcheck"></div>
+        <div id="posts">      
+            <div class="msg-comment">
+                <img class="rightmargin" src="img/profile.png">
+                <div class="msg-comment-text">
+                    <div>
+                        <h2 class="rightmargin">Yasser Shah</h2>
+                        <h3>3 days ago</h3>
+                    </div>
+                    <p>Messi or Ronaldo?</p>
                 </div>
-                <p>100% Ronaldo. He is pure class</p>
+                <div class="msg-comment-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
             </div>
-        </div>
-        <div class="msg-comment">
-            <img class="rightmargin" src="img/profile.png">
-            <div>
-                <div>
-                    <h2 class="rightmargin">Yasser Shah</h2>
-                    <h3>2 years ago</h3>
+            <div class="msg-comment">
+                <img class="rightmargin" src="img/profile.png">
+                <div class="msg-comment-text">
+                    <div>
+                        <h2 class="rightmargin">Yasser Shah</h2>
+                        <h3>3 days ago</h3>
+                    </div>
+                    <p>100% Ronaldo. He is pure class</p>
                 </div>
-                <p>Messi or Ronaldo?</p>
+                <div class="msg-comment-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            <div class="msg-comment">
+                <img class="rightmargin" src="img/profile.png">
+                <div class="msg-comment-text">
+                    <div>
+                        <h2 class="rightmargin">Yasser Shah</h2>
+                        <h3>2 days ago</h3>
+                    </div>
+                    <p>Bruh, u mean penaldo</p>
+                </div>
+                <div class="msg-comment-icon">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
             </div>
         </div>
     </div>

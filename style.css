@@ -10,15 +10,24 @@ html,body{
 button{
     cursor: pointer;
 }
+i{
+    cursor: pointer;
+}
+i:hover{
+    opacity: 0.8;
+}
+i:active{
+    opacity: 0.6;
+}
 .rightmargin{
     margin-right: 1rem;
 }
-.msg-posting{
+.msg-posting form{
     display: flex;
     justify-content: left;
     align-items: center;
     min-height: 3rem;
-    margin: 5rem 5rem;
+    margin: 5rem 5rem 0 5rem;
 }
 .msg-posting-textarea{
     min-height: 1rem;
@@ -42,6 +51,13 @@ button{
 .msg-posting button:active{
     opacity: 0.6;
 }
+#blankcheck{
+    display: block;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    color: rgb(248, 14, 14);
+}
 .msg-comment{
     display: flex;
     justify-content: left;
@@ -49,27 +65,40 @@ button{
     height: 3rem;
     margin: 0.7rem 5rem;
 }
+.msg-comment-text{
+    width: 100%;
+}
+.msg-comment-icon{
+    width: 4rem;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    justify-items: center;
+}
+.msg-comment-icon i{
+    font-size: 1.2rem;
+}
 .msg div img{
     border-radius: 50%;
     width: 3rem;
     height: 100%;
     object-fit: cover;
 }
-.msg div div{
+.msg div div div{
     display: grid;
     grid-template-rows: 1.5rem 1.5rem;
     align-items: center;
 }
-.msg div div div{
+.msg div div div div{
     display: flex;
     height: 100%;
 }
-.msg div div div h2{
+.msg div div div div h2{
     font-size: 0.8rem;
 }
-.msg div div div h3{
+.msg div div div div h3{
     font-size: 0.6rem;
 }
-.msg div div div p{
+.msg div div div div p{
     font-size: 1rem;
 }
