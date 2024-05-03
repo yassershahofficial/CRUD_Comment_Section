@@ -38,7 +38,7 @@ let acceptData = () => {
 let uploadData = () => {
     posts.innerHTML += 
     `
-    <div class="msg-comment">
+    <div class="msg-comment" id="msg-comment">
         <img class="rightmargin" src="img/profile.png">
         <div class="msg-comment-text">
             <div>
@@ -48,11 +48,22 @@ let uploadData = () => {
             <p>${data.msg}</p>
         </div>
         <div class="msg-comment-icon">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <i class="fa-solid fa-trash"></i>
+            <i onClick="editData(this)" class="fa-solid fa-pen-to-square"></i>
+            <i onClick="deleteData(this)" class="fa-solid fa-trash"></i>
         </div>
     </div>
     `;
     console.log("Data uploaded");
     input.value = "";
+}
+
+//delete posted comment
+let deleteData = (e) => {
+    e.parentElement.parentElement.remove();
+}
+
+//delete posted comment and update current comment
+let editData = (e) => {
+    input.value = e.parentElement.previousElementSibling.children[1].innerHTML;
+    e.parentElement.parentElement.remove();
 }
